@@ -18,8 +18,8 @@ func init() {
 	fmt.Println("init libgoc")
 }
 
-//export GoFoo
-func GoFoo() {
+//export DebugGoGC
+func DebugGoGC() {
 	go func() {
 		for {
 			p := make([]int, 1024*1024)
@@ -29,8 +29,8 @@ func GoFoo() {
 	}()
 }
 
-//export GoBar
-func GoBar() map[int]int {
+//export GetGoMap
+func GetGoMap() map[int]int {
 	return make(map[int]int)
 }
 

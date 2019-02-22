@@ -8,8 +8,8 @@ int
 main(int argc, char **argv) {
   printf("%d\n", getpid());
 
-  GoFoo();
-  // void *m = GoBar();
+  DebugGoGC();
+  // void *m = GetGoMap();
 
   while (1) {
     sleep(1);
