@@ -9,6 +9,7 @@ main(int argc, char **argv) {
   printf("%d\n", getpid());
 
   GoFoo();
+  // void *m = GoBar();
 
   while (1) {
     sleep(1);

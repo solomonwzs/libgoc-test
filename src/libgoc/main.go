@@ -30,8 +30,8 @@ func GoFoo() {
 }
 
 //export GoBar
-func GoBar() {
-	fmt.Println("Hello world")
+func GoBar() map[int]int {
+	return make(map[int]int)
 }
 
 func main() {}
